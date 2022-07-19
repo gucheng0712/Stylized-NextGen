@@ -1,2 +1,2 @@
 # Stylized-NextGen
-A stylized shader pipeline to integrate stylization into physically based rendering
+A stylized shader pipeline that integrating stylization into physically based rendering
