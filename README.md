@@ -1,5 +1,6 @@
 # Stylized-NextGen (In Development)
 A stylized shader pipeline that integrating stylization into physically based rendering.
+
 ![image-20220721114614519](https://raw.githubusercontent.com/gucheng0712/ImageHoster/main/src/202207211952437.png)
 
 
@@ -9,43 +10,57 @@ Listing some shader functionalities
 
 ### Perspective Correction
 Modifying the Projection Matrix in the vertex shader to translate the Perspective Projection  to Orthographic Projection on specific materials based on a threshold. so the perspective removed object will be able to fit in normal perspective environment. Nice to have on  anime/stylized rendering.
+
 ![image-20220720223706612](https://raw.githubusercontent.com/gucheng0712/ImageHoster/main/src/202207202237607.png)
 
 
 ### Stylized Rim
 Standard: Inverted Fresnel with offset based on the light direction
+
 Screen Space: screen space depth offset based on the view space light direction.
+
 ![image-20220721204852268](https://raw.githubusercontent.com/gucheng0712/ImageHoster/main/src/202207212048269.png)
 
 
 ### Stylized Diffuse Shading
 Bands based ramp
+
 Mihoyo Anime CG Rendering Layered Ramp Texture 
+
 Cel Shading
+
 ![image-20220721201158465](https://raw.githubusercontent.com/gucheng0712/ImageHoster/main/src/202207212012190.png)
 
 
 ### Stylized Specular Shading
 Blinn Phong Specular with smoothstep, correctly remapped with roughness and metallic parameter
+
 ![image-20220721231600723](https://raw.githubusercontent.com/gucheng0712/ImageHoster/main/src/202207212316951.png)
 
 
 ### Isotropic/Anisotropic/Silk
 Direct Lighting:
+
 [[2018] Call Of Duty: WWII Multi Scattering Diffuse BRDF](https://advances.realtimerendering.com/s2018/MaterialAdvancesInWWII.pdf)
+
 GGX Normal Distribution Function
+
 Smith GGX Visibility Term 
+
 ![image-20220721110211816](https://raw.githubusercontent.com/gucheng0712/ImageHoster/main/src/202207211952109.png)
 
 
 ### Fabric
 [Charlie Normal Distribution Function](https://knarkowicz.wordpress.com/2018/01/04/cloth-shading/)
+
 Ashikhmin Visibility Term
 
 
 ### Hair
 [Energy-Conserving Wrapped Cosine Lobe Diffuse](http://blog.stevemcauley.com/2013/01/30/extension-to-energy-conserving-wrapped-diffuse/)
+
 Two Layer KajiyaKay Strand Specular
+
 Tangent Map 
 
 
@@ -64,12 +79,13 @@ Custom CubeMap/ SphericalMap
 Toony Interpolation
 
 
-
 ### Thin Film (Iridescence)
 Modified Iridescence BSDF
+
 Reference: https://belcour.github.io/blog/research/publication/2017/05/01/brdf-thin-film.html
 
 ![image-20220720235334319](https://raw.githubusercontent.com/gucheng0712/ImageHoster/main/src/202207210013411.png)
+
 
 ### Clear Coat
 
@@ -90,7 +106,6 @@ Using UV offset to achieve hair shadows that change according to the direction o
 
 ![image-20220721202424374](https://raw.githubusercontent.com/gucheng0712/ImageHoster/main/src/202207212024584.png)
 
-
 ### Skinned GPU Instancing Fur Shell
 
 Unity exposed SkinnedMeshRenderer.GetVertexBuffer() API since Unity 2021.2.0, so that it is possible to get skinned VBO, and then use ByteAddressBuffer to pass it to Shader (because DX11 only allows Raw to pass VBO/IBO) by using DrawProcedural() in RenderFeature to achieve Skinned GPU Instancing.
@@ -103,11 +118,7 @@ Unity exposed SkinnedMeshRenderer.GetVertexBuffer() API since Unity 2021.2.0, so
 Created by Collaborator
 
 
-
 ### Subsurface Scattering
-![image-20220721205221614](https://raw.githubusercontent.com/gucheng0712/ImageHoster/main/src/202207212052523.png)
-![PerspectiveRemoval](https://raw.githubusercontent.com/gucheng0712/ImageHoster/main/src/202207210008354.gif)
-
 Modified SSS from [GDCVault: Approximating Translucency for a Fast, Cheap and Convincing Subsurface Scattering Look](https://www.gdcvault.com/play/1014538/Approximating-Translucency-for-a-Fast) 
 
 Modifications:
@@ -118,8 +129,8 @@ Modifications:
 
 * Parallax Refraction
 
-
-
+![image-20220721205221614](https://raw.githubusercontent.com/gucheng0712/ImageHoster/main/src/202207212052523.png)
+![PerspectiveRemoval](https://raw.githubusercontent.com/gucheng0712/ImageHoster/main/src/202207210008354.gif)
 
 
 ### Matcap
