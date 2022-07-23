@@ -65,23 +65,23 @@ Tangent Map
 
 
 #### Environment Mapping
-Isotropic Environment Mapping: Unity built-in approximation on UE split sum DFG LUT
+**Isotropic Environment Mapping**: Unity built-in approximation on UE split sum DFG LUT
 
-Anisotropic Environment Mapping: using anisotropic modified normal as reflection vector
+**Anisotropic Environment Mapping**: using anisotropic modified normal as reflection vector
 
-Cloth Environment Mapping: split sum DFG LUT for cloth
+**Cloth Environment Mapping**: split sum DFG LUT for cloth
 
 ![img](https://raw.githubusercontent.com/gucheng0712/ImageHoster/main/src/202207212327336.png)
 
-Refraction/Reflection
+**Refraction/Reflection**
 
-Custom CubeMap/ SphericalMap
+**Custom CubeMap/ SphericalMap**
 
-Toony Interpolation
+**Toony Interpolation**
 
 
 ### Thin Film (Iridescence)
-Modified Iridescence BSDF
+**Modified Iridescence BSDF**
 
 Reference: https://belcour.github.io/blog/research/publication/2017/05/01/brdf-thin-film.html
 
@@ -90,7 +90,7 @@ Reference: https://belcour.github.io/blog/research/publication/2017/05/01/brdf-t
 
 ### Clear Coat
 
-Modified clearcoat BSDF
+**Modified clearcoat BSDF**
 
 ![image-20220721200730373](https://raw.githubusercontent.com/gucheng0712/ImageHoster/main/src/202207212007495.png)
 
